@@ -13,7 +13,7 @@
       @keyup.esc="closePopper"
     >
       <!-- The default slot to trigger the popper  -->
-      <slot />
+      <slot name="reference" />
     </div>
     <Transition name="fade">
       <div
@@ -181,7 +181,7 @@
   const modifiedIsOpen = ref(false);
 
   onMounted(() => {
-    const children = slots.default();
+    const children = slots.reference();
 
     if (children && children.length > 1) {
       return console.error(

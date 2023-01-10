@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <Popper arrow>
-      <button>Click this</button>
+    <Popper hover arrow>
+      <template #reference>
+       <button >Click this</button>
+      </template>
       <template #content>
         <div>This is the content</div>
       </template>

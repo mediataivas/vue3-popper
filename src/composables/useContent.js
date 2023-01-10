@@ -1,5 +1,5 @@
 import { ref, onMounted, onBeforeUnmount, watch } from "vue";
-export default function useContent(slots, popperNode, content) {
+export default function xuseContent(slots, popperNode, content) {
   let observer = null;
   const hasContent = ref(false);
 
